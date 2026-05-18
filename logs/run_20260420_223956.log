@@ -1,0 +1,54 @@
+22:39:56 [INFO] __main__: ======================================================================
+22:39:56 [INFO] __main__:   ESTUDIO EMPÍRICO: COSTO DE VERIFICACIÓN DE CERTIFICADOS TLS
+22:39:56 [INFO] __main__: ======================================================================
+22:39:56 [INFO] __main__: ⚡ Modo rápido activado.
+22:39:56 [INFO] __main__: Configuraciones a probar : 4
+22:39:56 [INFO] __main__: Trials por configuración : 15
+22:39:56 [INFO] __main__: Total handshakes estimados: 60
+22:39:56 [INFO] __main__: 
+22:39:56 [INFO] metrics: Archivo de resultados inicializado: results/results_20260420_223956.csv
+22:39:56 [INFO] __main__: [  1/4] RSA-2048              cadena=0  trials=15  puerto=54321
+22:39:56 [INFO] cert_generator: Generando cadena: alg=RSA key=2048 chain_length=0
+22:39:56 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=1257 B  
+22:39:56 [INFO] __main__: [  2/4] RSA-2048              cadena=1  trials=15  puerto=54322
+22:39:56 [INFO] cert_generator: Generando cadena: alg=RSA key=2048 chain_length=1
+22:39:57 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=2530 B  
+22:39:57 [INFO] __main__: [  3/4] ECDSA-secp256r1       cadena=0  trials=15  puerto=54323
+22:39:57 [INFO] cert_generator: Generando cadena: alg=ECDSA key=secp256r1 chain_length=0
+22:39:57 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=717 B  
+22:39:57 [INFO] __main__: [  4/4] ECDSA-secp256r1       cadena=1  trials=15  puerto=54324
+22:39:57 [INFO] cert_generator: Generando cadena: alg=ECDSA key=secp256r1 chain_length=1
+22:39:57 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=1458 B  
+22:39:57 [INFO] __main__: 
+Experimento completado en 1.2 s
+22:39:57 [INFO] __main__: Resultados guardados en: results/results_20260420_223956.csv
+22:39:57 [INFO] metrics: 
+================================================================================
+22:39:57 [INFO] metrics: RESUMEN DE RESULTADOS
+22:39:57 [INFO] metrics: ================================================================================
+22:39:57 [INFO] metrics: ================================================================================
+
+22:39:57 [INFO] metrics: Resumen guardado en: results/summary_20260420_223957.csv
+22:39:57 [INFO] __main__: Resumen estadístico guardado en: results/summary_20260420_223957.csv
+22:39:57 [INFO] __main__: 
+Generando gráficas interactivas...
+22:39:57 [INFO] plotter: Gráfica guardada: plots/1_latency_vs_chain.html
+22:39:58 [INFO] plotter: Gráfica guardada: plots/2_rsa_vs_ecdsa_boxplot.html
+22:39:58 [INFO] plotter: Gráfica guardada: plots/3_cert_size_vs_chain.html
+22:39:58 [INFO] plotter: Gráfica guardada: plots/4_scalability_heatmap.html
+22:39:58 [INFO] plotter: Dashboard guardado: plots/5_dashboard.html
+22:39:58 [INFO] plotter: 
+✅ 5 gráficas generadas en: plots
+22:39:58 [INFO] __main__: 
+📊 Gráficas generadas:
+22:39:58 [INFO] __main__:    → plots/1_latency_vs_chain.html
+22:39:58 [INFO] __main__:    → plots/2_rsa_vs_ecdsa_boxplot.html
+22:39:58 [INFO] __main__:    → plots/3_cert_size_vs_chain.html
+22:39:58 [INFO] __main__:    → plots/4_scalability_heatmap.html
+22:39:58 [INFO] __main__:    → plots/5_dashboard.html
+22:39:58 [INFO] __main__: 
+🎉 Pipeline finalizado. Resultados en:
+22:39:58 [INFO] __main__:    Datos  : results/
+22:39:58 [INFO] __main__:    Gráficas: plots/
+22:39:58 [INFO] __main__:    Logs   : logs/
+
