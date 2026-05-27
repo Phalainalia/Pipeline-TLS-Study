@@ -1,0 +1,38 @@
+2026-05-26 20:56:01,483 [INFO] main: ============================================================
+2026-05-26 20:56:01,484 [INFO] main:   IoT TLS/PKI Scalability Framework
+2026-05-26 20:56:01,484 [INFO] main:   Run ID : 20260526_205600
+2026-05-26 20:56:01,484 [INFO] main:   Mode   : HARDWARE
+2026-05-26 20:56:01,484 [INFO] main:   Server : 192.168.1.129:8443
+2026-05-26 20:56:01,484 [INFO] main: ============================================================
+2026-05-26 20:56:01,509 [INFO] manifest: [Manifest] Created → runs/20260526_205600/results/manifest.json
+2026-05-26 20:56:01,509 [INFO] main: [Main] Initialising session Root CA...
+2026-05-26 20:56:01,708 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-26 20:56:01,709 [INFO] main: [Main] Session Root CA ready → certs/session_root/root_ca.crt
+2026-05-26 20:56:01,835 [INFO] tls_server: [Server] Reconfigured → RSA_2048_chain0
+2026-05-26 20:56:01,835 [INFO] tls_server: [Server] Listening on 0.0.0.0:8443
+2026-05-26 20:56:01,835 [INFO] main: [Main] TLS server listening on 0.0.0.0:8443
+2026-05-26 20:56:01,835 [INFO] main: [Main] Server cert SAN includes IP 192.168.1.129
+2026-05-26 20:56:01,914 [INFO] serial_ctrl: [Serial] Port open: /dev/cu.usbserial-10 @ 115200  DTR=False
+2026-05-26 20:56:01,914 [INFO] serial_ctrl: [Serial] Pulsing DTR to reset ESP32 cleanly...
+2026-05-26 20:56:02,095 [INFO] serial_ctrl: [Serial] Reset pulse done – ESP32 is booting
+2026-05-26 20:56:02,095 [INFO] main: [Main] Serial open on /dev/cu.usbserial-10
+2026-05-26 20:56:02,095 [INFO] serial_ctrl: [Serial] Waiting for ESP32 READY (up to 60s)...
+2026-05-26 20:56:08,330 [INFO] serial_ctrl: [Serial] ✓ READY received after 6.2s
+2026-05-26 20:56:08,332 [INFO] main: [Main] Verifying firmware CA matches session Root CA...
+2026-05-26 20:56:08,333 [INFO] serial_ctrl: [Serial] Sent FLASH_VERIFY – reading firmware CA...
+2026-05-26 20:56:18,453 [ERROR] serial_ctrl: [Serial] ✗ FIRMWARE CA MISMATCH
+2026-05-26 20:56:18,457 [ERROR] serial_ctrl: [Serial]   Expected (first 60): -----BEGIN CERTIFICATE-----
+MIIDUjCCAjqgAwIBAgIUMNa9zojBkINM
+2026-05-26 20:56:18,457 [ERROR] serial_ctrl: [Serial]   Firmware (first 60): -----BEGIN CERTIFICATE-----
+MIIDUjCCAjqgAwIBAgIUGeFkHAvtDQiY
+2026-05-26 20:56:18,457 [ERROR] main: ============================================================
+2026-05-26 20:56:18,457 [ERROR] main: [Main] FIRMWARE CA MISMATCH – aborting experiment
+2026-05-26 20:56:18,458 [ERROR] main: [Main] The CA compiled into the ESP32 firmware does
+2026-05-26 20:56:18,458 [ERROR] main: [Main] NOT match the current session Root CA.
+2026-05-26 20:56:18,458 [ERROR] main: [Main] Every TLS handshake will fail until you reflash.
+2026-05-26 20:56:18,458 [ERROR] main: [Main]
+2026-05-26 20:56:18,458 [ERROR] main: [Main] Fix:
+2026-05-26 20:56:18,458 [ERROR] main: [Main]   cd esp32 && pio run --target upload
+2026-05-26 20:56:18,458 [ERROR] main: [Main]   (then restart main.py)
+2026-05-26 20:56:18,458 [ERROR] main: ============================================================
+2026-05-26 20:56:18,963 [INFO] serial_ctrl: [Serial] Disconnected

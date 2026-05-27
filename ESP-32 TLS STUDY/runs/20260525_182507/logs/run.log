@@ -1,0 +1,19 @@
+2026-05-25 18:25:08,093 [INFO] main: ============================================================
+2026-05-25 18:25:08,093 [INFO] main:   IoT TLS/PKI Scalability Framework
+2026-05-25 18:25:08,094 [INFO] main:   Run ID : 20260525_182507
+2026-05-25 18:25:08,094 [INFO] main:   Mode   : HARDWARE
+2026-05-25 18:25:08,094 [INFO] main:   Server : 10.58.189.6:8443
+2026-05-25 18:25:08,094 [INFO] main: ============================================================
+2026-05-25 18:25:08,113 [INFO] manifest: [Manifest] Created → runs/20260525_182507/results/manifest.json
+2026-05-25 18:25:08,113 [INFO] main: [Main] Initialising session Root CA...
+2026-05-25 18:25:08,188 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-25 18:25:08,188 [INFO] main: [Main] Session Root CA ready → certs/session_root/root_ca.crt
+2026-05-25 18:25:08,481 [INFO] tls_server: [Server] Reconfigured → RSA_2048_chain0
+2026-05-25 18:25:08,482 [INFO] tls_server: [Server] Listening on 0.0.0.0:8443
+2026-05-25 18:25:08,482 [INFO] main: [Main] TLS server listening on 0.0.0.0:8443
+2026-05-25 18:25:08,482 [INFO] main: [Main] Server cert SAN includes IP 10.58.189.6
+2026-05-25 18:25:08,562 [INFO] serial_ctrl: [Serial] Port open: /dev/cu.usbserial-10 @ 115200  DTR=False
+2026-05-25 18:25:08,562 [INFO] serial_ctrl: [Serial] Pulsing DTR to reset ESP32 cleanly...
+2026-05-25 18:25:08,738 [INFO] serial_ctrl: [Serial] Reset pulse done – ESP32 is booting
+2026-05-25 18:25:08,738 [INFO] main: [Main] Serial open on /dev/cu.usbserial-10
+2026-05-25 18:25:08,738 [INFO] serial_ctrl: [Serial] Waiting for ESP32 READY (up to 60s)...

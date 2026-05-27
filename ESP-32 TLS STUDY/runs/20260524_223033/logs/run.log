@@ -1,0 +1,183 @@
+2026-05-24 22:30:35,643 [INFO] main: ============================================================
+2026-05-24 22:30:35,643 [INFO] main:   IoT TLS/PKI Scalability Framework
+2026-05-24 22:30:35,643 [INFO] main:   Run ID : 20260524_223033
+2026-05-24 22:30:35,643 [INFO] main:   Mode   : HARDWARE
+2026-05-24 22:30:35,643 [INFO] main:   Server : 192.168.1.129:8443
+2026-05-24 22:30:35,643 [INFO] main: ============================================================
+2026-05-24 22:30:35,673 [INFO] manifest: [Manifest] Created → runs/20260524_223033/results/manifest.json
+2026-05-24 22:30:35,673 [INFO] main: [Main] Initialising session Root CA...
+2026-05-24 22:30:35,755 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:30:35,755 [INFO] main: [Main] Session Root CA ready → certs/session_root/root_ca.crt
+2026-05-24 22:30:35,804 [INFO] tls_server: [Server] Reconfigured → RSA_2048_chain0
+2026-05-24 22:30:35,804 [INFO] tls_server: [Server] Listening on 0.0.0.0:8443
+2026-05-24 22:30:35,804 [INFO] main: [Main] TLS server listening on 0.0.0.0:8443
+2026-05-24 22:30:35,804 [INFO] main: [Main] Server cert SAN includes IP 192.168.1.129
+2026-05-24 22:30:35,882 [INFO] serial_ctrl: [Serial] Port open: /dev/cu.usbserial-10 @ 115200  DTR=False
+2026-05-24 22:30:35,882 [INFO] serial_ctrl: [Serial] Pulsing DTR to reset ESP32 cleanly...
+2026-05-24 22:30:36,054 [INFO] serial_ctrl: [Serial] Reset pulse done – ESP32 is booting
+2026-05-24 22:30:36,054 [INFO] main: [Main] Serial open on /dev/cu.usbserial-10
+2026-05-24 22:30:36,054 [INFO] serial_ctrl: [Serial] Waiting for ESP32 READY (up to 60s)...
+2026-05-24 22:30:39,770 [INFO] serial_ctrl: [Serial] ✓ READY received after 3.7s
+2026-05-24 22:30:39,772 [INFO] runner: 
+============================================================
+2026-05-24 22:30:39,772 [INFO] runner:   Batch: RSA 2048  chain_depth=0
+2026-05-24 22:30:39,773 [INFO] runner: ============================================================
+2026-05-24 22:30:39,941 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:30:39,943 [INFO] tls_server: [Server] Reconfigured → RSA_2048_chain0
+2026-05-24 22:30:40,448 [INFO] runner:   Trial 1/1  (RSA_2048_chain0_t1)
+2026-05-24 22:30:40,449 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,RSA,2048,0,1
+2026-05-24 22:30:50,079 [INFO] runner:   → HS=0.0ms  heap=254352  frag=0.5650  ok=✗
+2026-05-24 22:30:50,284 [INFO] runner: 
+============================================================
+2026-05-24 22:30:50,284 [INFO] runner:   Batch: RSA 2048  chain_depth=1
+2026-05-24 22:30:50,284 [INFO] runner: ============================================================
+2026-05-24 22:30:50,798 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:30:50,807 [INFO] tls_server: [Server] Reconfigured → RSA_2048_chain1
+2026-05-24 22:30:51,312 [INFO] runner:   Trial 1/1  (RSA_2048_chain1_t1)
+2026-05-24 22:30:51,314 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,RSA,2048,1,1
+2026-05-24 22:30:51,507 [INFO] runner:   → HS=0.0ms  heap=254068  frag=0.5650  ok=✗
+2026-05-24 22:30:51,711 [INFO] runner: 
+============================================================
+2026-05-24 22:30:51,712 [INFO] runner:   Batch: RSA 2048  chain_depth=2
+2026-05-24 22:30:51,714 [INFO] runner: ============================================================
+2026-05-24 22:30:52,236 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:30:52,238 [INFO] tls_server: [Server] Reconfigured → RSA_2048_chain2
+2026-05-24 22:30:52,743 [INFO] runner:   Trial 1/1  (RSA_2048_chain2_t1)
+2026-05-24 22:30:52,743 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,RSA,2048,2,1
+2026-05-24 22:30:53,041 [INFO] runner:   → HS=0.0ms  heap=253864  frag=0.5640  ok=✗
+2026-05-24 22:30:53,246 [INFO] runner: 
+============================================================
+2026-05-24 22:30:53,246 [INFO] runner:   Batch: RSA 2048  chain_depth=3
+2026-05-24 22:30:53,246 [INFO] runner: ============================================================
+2026-05-24 22:30:53,848 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:30:53,853 [INFO] tls_server: [Server] Reconfigured → RSA_2048_chain3
+2026-05-24 22:30:54,355 [INFO] runner:   Trial 1/1  (RSA_2048_chain3_t1)
+2026-05-24 22:30:54,355 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,RSA,2048,3,1
+2026-05-24 22:31:00,539 [INFO] runner:   → HS=0.0ms  heap=253864  frag=0.5640  ok=✗
+2026-05-24 22:31:00,746 [INFO] runner: 
+============================================================
+2026-05-24 22:31:00,746 [INFO] runner:   Batch: RSA 4096  chain_depth=0
+2026-05-24 22:31:00,746 [INFO] runner: ============================================================
+2026-05-24 22:31:01,048 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:31:01,053 [INFO] tls_server: [Server] Reconfigured → RSA_4096_chain0
+2026-05-24 22:31:01,558 [INFO] runner:   Trial 1/1  (RSA_4096_chain0_t1)
+2026-05-24 22:31:01,560 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,RSA,4096,0,1
+2026-05-24 22:31:01,894 [INFO] runner:   → HS=0.0ms  heap=254068  frag=0.5650  ok=✗
+2026-05-24 22:31:02,097 [INFO] runner: 
+============================================================
+2026-05-24 22:31:02,097 [INFO] runner:   Batch: RSA 4096  chain_depth=1
+2026-05-24 22:31:02,097 [INFO] runner: ============================================================
+2026-05-24 22:31:04,041 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:31:04,043 [INFO] tls_server: [Server] Reconfigured → RSA_4096_chain1
+2026-05-24 22:31:04,545 [INFO] runner:   Trial 1/1  (RSA_4096_chain1_t1)
+2026-05-24 22:31:04,547 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,RSA,4096,1,1
+2026-05-24 22:31:04,781 [INFO] runner:   → HS=0.0ms  heap=254068  frag=0.5650  ok=✗
+2026-05-24 22:31:04,984 [INFO] runner: 
+============================================================
+2026-05-24 22:31:04,985 [INFO] runner:   Batch: RSA 4096  chain_depth=2
+2026-05-24 22:31:04,985 [INFO] runner: ============================================================
+2026-05-24 22:31:06,836 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:31:06,839 [INFO] tls_server: [Server] Reconfigured → RSA_4096_chain2
+2026-05-24 22:31:07,341 [INFO] runner:   Trial 1/1  (RSA_4096_chain2_t1)
+2026-05-24 22:31:07,342 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,RSA,4096,2,1
+2026-05-24 22:31:07,789 [INFO] runner:   → HS=0.0ms  heap=254068  frag=0.5650  ok=✗
+2026-05-24 22:31:07,993 [INFO] runner: 
+============================================================
+2026-05-24 22:31:07,994 [INFO] runner:   Batch: RSA 4096  chain_depth=3
+2026-05-24 22:31:07,994 [INFO] runner: ============================================================
+2026-05-24 22:31:12,433 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:31:12,437 [INFO] tls_server: [Server] Reconfigured → RSA_4096_chain3
+2026-05-24 22:31:12,942 [INFO] runner:   Trial 1/1  (RSA_4096_chain3_t1)
+2026-05-24 22:31:12,944 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,RSA,4096,3,1
+2026-05-24 22:31:14,032 [INFO] runner:   → HS=0.0ms  heap=254068  frag=0.5650  ok=✗
+2026-05-24 22:31:14,238 [INFO] runner: 
+============================================================
+2026-05-24 22:31:14,238 [INFO] runner:   Batch: ECDSA secp256r1  chain_depth=0
+2026-05-24 22:31:14,238 [INFO] runner: ============================================================
+2026-05-24 22:31:14,263 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:31:14,269 [INFO] tls_server: [Server] Reconfigured → ECDSA_secp256r1_chain0
+2026-05-24 22:31:14,770 [INFO] runner:   Trial 1/1  (ECDSA_secp256r1_chain0_t1)
+2026-05-24 22:31:14,771 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,ECDSA,secp256r1,0,1
+2026-05-24 22:31:15,220 [INFO] runner:   → HS=0.0ms  heap=254052  frag=0.5650  ok=✗
+2026-05-24 22:31:15,425 [INFO] runner: 
+============================================================
+2026-05-24 22:31:15,426 [INFO] runner:   Batch: ECDSA secp256r1  chain_depth=1
+2026-05-24 22:31:15,426 [INFO] runner: ============================================================
+2026-05-24 22:31:15,438 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:31:15,440 [INFO] tls_server: [Server] Reconfigured → ECDSA_secp256r1_chain1
+2026-05-24 22:31:15,949 [INFO] runner:   Trial 1/1  (ECDSA_secp256r1_chain1_t1)
+2026-05-24 22:31:15,953 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,ECDSA,secp256r1,1,1
+2026-05-24 22:31:16,722 [INFO] runner:   → HS=0.0ms  heap=253916  frag=0.5650  ok=✗
+2026-05-24 22:31:16,924 [INFO] runner: 
+============================================================
+2026-05-24 22:31:16,924 [INFO] runner:   Batch: ECDSA secp256r1  chain_depth=2
+2026-05-24 22:31:16,924 [INFO] runner: ============================================================
+2026-05-24 22:31:16,942 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:31:16,944 [INFO] tls_server: [Server] Reconfigured → ECDSA_secp256r1_chain2
+2026-05-24 22:31:17,450 [INFO] runner:   Trial 1/1  (ECDSA_secp256r1_chain2_t1)
+2026-05-24 22:31:17,450 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,ECDSA,secp256r1,2,1
+2026-05-24 22:31:18,221 [INFO] runner:   → HS=0.0ms  heap=253912  frag=0.5640  ok=✗
+2026-05-24 22:31:18,426 [INFO] runner: 
+============================================================
+2026-05-24 22:31:18,426 [INFO] runner:   Batch: ECDSA secp256r1  chain_depth=3
+2026-05-24 22:31:18,426 [INFO] runner: ============================================================
+2026-05-24 22:31:18,435 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:31:18,437 [INFO] tls_server: [Server] Reconfigured → ECDSA_secp256r1_chain3
+2026-05-24 22:31:18,942 [INFO] runner:   Trial 1/1  (ECDSA_secp256r1_chain3_t1)
+2026-05-24 22:31:18,942 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,ECDSA,secp256r1,3,1
+2026-05-24 22:31:25,948 [INFO] runner:   → HS=0.0ms  heap=253916  frag=0.5650  ok=✗
+2026-05-24 22:31:26,151 [INFO] runner: 
+============================================================
+2026-05-24 22:31:26,152 [INFO] runner:   Batch: ECDSA secp384r1  chain_depth=0
+2026-05-24 22:31:26,152 [INFO] runner: ============================================================
+2026-05-24 22:31:26,158 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:31:26,160 [INFO] tls_server: [Server] Reconfigured → ECDSA_secp384r1_chain0
+2026-05-24 22:31:26,665 [INFO] runner:   Trial 1/1  (ECDSA_secp384r1_chain0_t1)
+2026-05-24 22:31:26,666 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,ECDSA,secp384r1,0,1
+2026-05-24 22:31:27,771 [INFO] runner:   → HS=0.0ms  heap=253848  frag=0.5640  ok=✗
+2026-05-24 22:31:27,977 [INFO] runner: 
+============================================================
+2026-05-24 22:31:27,977 [INFO] runner:   Batch: ECDSA secp384r1  chain_depth=1
+2026-05-24 22:31:27,977 [INFO] runner: ============================================================
+2026-05-24 22:31:27,993 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:31:27,995 [INFO] tls_server: [Server] Reconfigured → ECDSA_secp384r1_chain1
+2026-05-24 22:31:28,500 [INFO] runner:   Trial 1/1  (ECDSA_secp384r1_chain1_t1)
+2026-05-24 22:31:28,501 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,ECDSA,secp384r1,1,1
+2026-05-24 22:31:30,181 [INFO] runner:   → HS=0.0ms  heap=254048  frag=0.5650  ok=✗
+2026-05-24 22:31:30,385 [INFO] runner: 
+============================================================
+2026-05-24 22:31:30,386 [INFO] runner:   Batch: ECDSA secp384r1  chain_depth=2
+2026-05-24 22:31:30,386 [INFO] runner: ============================================================
+2026-05-24 22:31:30,408 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:31:30,410 [INFO] tls_server: [Server] Reconfigured → ECDSA_secp384r1_chain2
+2026-05-24 22:31:30,915 [INFO] runner:   Trial 1/1  (ECDSA_secp384r1_chain2_t1)
+2026-05-24 22:31:30,916 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,ECDSA,secp384r1,2,1
+2026-05-24 22:31:32,249 [INFO] runner:   → HS=0.0ms  heap=254052  frag=0.5650  ok=✗
+2026-05-24 22:31:32,451 [INFO] runner: 
+============================================================
+2026-05-24 22:31:32,452 [INFO] runner:   Batch: ECDSA secp384r1  chain_depth=3
+2026-05-24 22:31:32,452 [INFO] runner: ============================================================
+2026-05-24 22:31:32,470 [INFO] flasher: [Flasher] CA header written → esp32/src/root_ca_embed.h
+2026-05-24 22:31:32,472 [INFO] tls_server: [Server] Reconfigured → ECDSA_secp384r1_chain3
+2026-05-24 22:31:32,978 [INFO] runner:   Trial 1/1  (ECDSA_secp384r1_chain3_t1)
+2026-05-24 22:31:32,978 [INFO] serial_ctrl: [Serial →] CMD:192.168.1.129,8443,ECDSA,secp384r1,3,1
+2026-05-24 22:31:34,126 [INFO] runner:   → HS=0.0ms  heap=253912  frag=0.5640  ok=✗
+2026-05-24 22:31:34,330 [INFO] runner: [Runner] All trials done. Computing statistics…
+2026-05-24 22:31:34,571 [INFO] stats: [Stats] Saved → runs/20260524_223033/results/statistics.csv  (16 configurations)
+2026-05-24 22:31:34,571 [INFO] runner: [Runner] Generating plots…
+2026-05-24 22:31:34,925 [INFO] plotter: [Plotter] latency_vs_chain.html
+2026-05-24 22:31:34,949 [INFO] plotter: [Plotter] fragmentation_over_time.html
+2026-05-24 22:31:34,977 [INFO] plotter: [Plotter] free_heap_vs_chain.html
+2026-05-24 22:31:35,011 [INFO] plotter: [Plotter] largest_block_vs_trials.html
+2026-05-24 22:31:35,041 [INFO] plotter: [Plotter] rsa_vs_ecdsa_boxplot.html
+2026-05-24 22:31:35,069 [INFO] plotter: [Plotter] success_heatmap.html
+2026-05-24 22:31:35,104 [INFO] plotter: [Plotter] frag_vs_latency.html
+2026-05-24 22:31:35,128 [INFO] plotter: [Plotter] cert_size_vs_chain.html
+2026-05-24 22:31:35,179 [INFO] plotter: [Plotter] Dashboard → runs/20260524_223033/plots/dashboard.html
+2026-05-24 22:31:35,180 [INFO] resume: [Resume] Checkpoint cleared
+2026-05-24 22:31:35,180 [INFO] runner: [Runner] Finished.
+2026-05-24 22:31:35,686 [INFO] serial_ctrl: [Serial] Disconnected
+2026-05-24 22:31:35,688 [INFO] manifest: [Manifest] Finalized (status=completed) → runs/20260524_223033/results/manifest.json
+2026-05-24 22:31:35,691 [INFO] organizer: [Organizer] Run archived → runs/20260524_223033  (2 files)
+2026-05-24 22:31:35,691 [INFO] main: [Main] Artifacts → runs/20260524_223033
+2026-05-24 22:31:35,691 [INFO] main: [Main] COMPLETED — 20260524_223033
