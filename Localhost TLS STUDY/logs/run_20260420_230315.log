@@ -1,0 +1,124 @@
+23:03:15 [INFO] __main__: ======================================================================
+23:03:15 [INFO] __main__:   ESTUDIO EMPÍRICO: COSTO DE VERIFICACIÓN DE CERTIFICADOS TLS
+23:03:15 [INFO] __main__:   Run ID: 20260420_230315
+23:03:15 [INFO] __main__: ======================================================================
+23:03:15 [INFO] __main__: Configuraciones a probar  : 20
+23:03:15 [INFO] __main__: Trials por configuración  : 15
+23:03:15 [INFO] __main__: Total handshakes estimados: 300
+23:03:15 [INFO] __main__: Resultados en             : results/run_20260420_230315/
+23:03:15 [INFO] __main__: Gráficas en               : plots/run_20260420_230315/
+23:03:15 [INFO] __main__: 
+23:03:15 [INFO] metrics: Archivo de resultados inicializado: results/run_20260420_230315/results_20260420_230315.csv
+23:03:15 [INFO] __main__: [  1/20] RSA-2048              cadena=0  trials=15  puerto=54321
+23:03:15 [INFO] cert_generator: Generando cadena: alg=RSA key=2048 chain_length=0
+23:03:15 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=1257 B  
+23:03:15 [INFO] __main__: [  2/20] RSA-2048              cadena=1  trials=15  puerto=54322
+23:03:15 [INFO] cert_generator: Generando cadena: alg=RSA key=2048 chain_length=1
+23:03:16 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=2530 B  
+23:03:16 [INFO] __main__: [  3/20] RSA-2048              cadena=2  trials=15  puerto=54323
+23:03:16 [INFO] cert_generator: Generando cadena: alg=RSA key=2048 chain_length=2
+23:03:16 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=3803 B  
+23:03:16 [INFO] __main__: [  4/20] RSA-2048              cadena=3  trials=15  puerto=54324
+23:03:16 [INFO] cert_generator: Generando cadena: alg=RSA key=2048 chain_length=3
+23:03:17 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=5076 B  
+23:03:17 [INFO] __main__: [  5/20] RSA-3072              cadena=0  trials=15  puerto=54325
+23:03:17 [INFO] cert_generator: Generando cadena: alg=RSA key=3072 chain_length=0
+23:03:18 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=1602 B  
+23:03:18 [INFO] __main__: [  6/20] RSA-3072              cadena=1  trials=15  puerto=54326
+23:03:18 [INFO] cert_generator: Generando cadena: alg=RSA key=3072 chain_length=1
+23:03:18 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=3220 B  
+23:03:18 [INFO] __main__: [  7/20] RSA-3072              cadena=2  trials=15  puerto=54327
+23:03:18 [INFO] cert_generator: Generando cadena: alg=RSA key=3072 chain_length=2
+23:03:19 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=4839 B  
+23:03:19 [INFO] __main__: [  8/20] RSA-3072              cadena=3  trials=15  puerto=54328
+23:03:19 [INFO] cert_generator: Generando cadena: alg=RSA key=3072 chain_length=3
+23:03:20 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=6458 B  
+23:03:20 [INFO] __main__: [  9/20] RSA-4096              cadena=0  trials=15  puerto=54329
+23:03:20 [INFO] cert_generator: Generando cadena: alg=RSA key=4096 chain_length=0
+23:03:23 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=1948 B  
+23:03:23 [INFO] __main__: [ 10/20] RSA-4096              cadena=1  trials=15  puerto=54330
+23:03:23 [INFO] cert_generator: Generando cadena: alg=RSA key=4096 chain_length=1
+23:03:25 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=3916 B  
+23:03:25 [INFO] __main__: [ 11/20] RSA-4096              cadena=2  trials=15  puerto=54331
+23:03:25 [INFO] cert_generator: Generando cadena: alg=RSA key=4096 chain_length=2
+23:03:27 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=5884 B  
+23:03:27 [INFO] __main__: [ 12/20] RSA-4096              cadena=3  trials=15  puerto=54332
+23:03:27 [INFO] cert_generator: Generando cadena: alg=RSA key=4096 chain_length=3
+23:03:31 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=7852 B  
+23:03:31 [INFO] __main__: [ 13/20] ECDSA-secp256r1       cadena=0  trials=15  puerto=54333
+23:03:31 [INFO] cert_generator: Generando cadena: alg=ECDSA key=secp256r1 chain_length=0
+23:03:31 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=717 B  
+23:03:31 [INFO] __main__: [ 14/20] ECDSA-secp256r1       cadena=1  trials=15  puerto=54334
+23:03:31 [INFO] cert_generator: Generando cadena: alg=ECDSA key=secp256r1 chain_length=1
+23:03:31 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=1458 B  
+23:03:31 [INFO] __main__: [ 15/20] ECDSA-secp256r1       cadena=2  trials=15  puerto=54335
+23:03:31 [INFO] cert_generator: Generando cadena: alg=ECDSA key=secp256r1 chain_length=2
+23:03:31 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=2191 B  
+23:03:31 [INFO] __main__: [ 16/20] ECDSA-secp256r1       cadena=3  trials=15  puerto=54336
+23:03:31 [INFO] cert_generator: Generando cadena: alg=ECDSA key=secp256r1 chain_length=3
+23:03:32 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=2932 B  
+23:03:32 [INFO] __main__: [ 17/20] ECDSA-secp384r1       cadena=0  trials=15  puerto=54337
+23:03:32 [INFO] cert_generator: Generando cadena: alg=ECDSA key=secp384r1 chain_length=0
+23:03:32 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=802 B  
+23:03:32 [INFO] __main__: [ 18/20] ECDSA-secp384r1       cadena=1  trials=15  puerto=54338
+23:03:32 [INFO] cert_generator: Generando cadena: alg=ECDSA key=secp384r1 chain_length=1
+23:03:32 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=1620 B  
+23:03:32 [INFO] __main__: [ 19/20] ECDSA-secp384r1       cadena=2  trials=15  puerto=54339
+23:03:32 [INFO] cert_generator: Generando cadena: alg=ECDSA key=secp384r1 chain_length=2
+23:03:32 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=2442 B  
+23:03:32 [INFO] __main__: [ 20/20] ECDSA-secp384r1       cadena=3  trials=15  puerto=54340
+23:03:32 [INFO] cert_generator: Generando cadena: alg=ECDSA key=secp384r1 chain_length=3
+23:03:33 [INFO] __main__:   ✓ 15/15 exitosos  cert_size=3260 B  
+23:03:33 [INFO] __main__: 
+Experimento completado en 17.7 s
+23:03:33 [INFO] __main__: Resultados guardados en: results/run_20260420_230315/results_20260420_230315.csv
+23:03:33 [INFO] metrics: 
+================================================================================
+23:03:33 [INFO] metrics: RESUMEN DE RESULTADOS
+23:03:33 [INFO] metrics: ================================================================================
+23:03:33 [INFO] metrics: [ECDSA-secp256r1     ] cadena=0  media=   1.94 ms  std=  0.23 ms  n=15  cert_size=717 B
+23:03:33 [INFO] metrics: [ECDSA-secp256r1     ] cadena=1  media=   2.26 ms  std=  0.36 ms  n=15  cert_size=1458 B
+23:03:33 [INFO] metrics: [ECDSA-secp256r1     ] cadena=2  media=   2.40 ms  std=  0.23 ms  n=15  cert_size=2191 B
+23:03:33 [INFO] metrics: [ECDSA-secp256r1     ] cadena=3  media=   2.61 ms  std=  0.22 ms  n=15  cert_size=2932 B
+23:03:33 [INFO] metrics: [ECDSA-secp384r1     ] cadena=0  media=   6.30 ms  std=  9.14 ms  n=15  cert_size=802 B
+23:03:33 [INFO] metrics: [ECDSA-secp384r1     ] cadena=1  media=   4.99 ms  std=  0.44 ms  n=15  cert_size=1620 B
+23:03:33 [INFO] metrics: [ECDSA-secp384r1     ] cadena=2  media=   5.58 ms  std=  0.27 ms  n=15  cert_size=2442 B
+23:03:33 [INFO] metrics: [ECDSA-secp384r1     ] cadena=3  media=   7.69 ms  std=  5.50 ms  n=15  cert_size=3260 B
+23:03:33 [INFO] metrics: [RSA-2048            ] cadena=0  media=   2.57 ms  std=  1.51 ms  n=15  cert_size=1257 B
+23:03:33 [INFO] metrics: [RSA-2048            ] cadena=1  media=   2.83 ms  std=  1.34 ms  n=15  cert_size=2530 B
+23:03:33 [INFO] metrics: [RSA-2048            ] cadena=2  media=   2.58 ms  std=  0.33 ms  n=15  cert_size=3803 B
+23:03:33 [INFO] metrics: [RSA-2048            ] cadena=3  media=   2.76 ms  std=  0.38 ms  n=15  cert_size=5076 B
+23:03:33 [INFO] metrics: [RSA-3072            ] cadena=0  media=   3.03 ms  std=  0.40 ms  n=15  cert_size=1602 B
+23:03:33 [INFO] metrics: [RSA-3072            ] cadena=1  media=   3.39 ms  std=  0.58 ms  n=15  cert_size=3220 B
+23:03:33 [INFO] metrics: [RSA-3072            ] cadena=2  media=   4.68 ms  std=  4.66 ms  n=15  cert_size=4839 B
+23:03:33 [INFO] metrics: [RSA-3072            ] cadena=3  media=   3.65 ms  std=  0.34 ms  n=15  cert_size=6458 B
+23:03:33 [INFO] metrics: [RSA-4096            ] cadena=0  media=   4.24 ms  std=  0.49 ms  n=15  cert_size=1948 B
+23:03:33 [INFO] metrics: [RSA-4096            ] cadena=1  media=   4.71 ms  std=  0.61 ms  n=15  cert_size=3916 B
+23:03:33 [INFO] metrics: [RSA-4096            ] cadena=2  media=   5.37 ms  std=  1.76 ms  n=15  cert_size=5884 B
+23:03:33 [INFO] metrics: [RSA-4096            ] cadena=3  media=   4.88 ms  std=  0.48 ms  n=15  cert_size=7852 B
+23:03:33 [INFO] metrics: ================================================================================
+
+23:03:33 [INFO] metrics: Resumen guardado en: results/run_20260420_230315/summary_20260420_230333.csv
+23:03:33 [INFO] __main__: Resumen estadístico guardado en: results/run_20260420_230315/summary_20260420_230333.csv
+23:03:33 [INFO] __main__: 
+Generando gráficas interactivas...
+23:03:33 [INFO] plotter: Gráfica guardada: plots/run_20260420_230315/1_latency_vs_chain.html
+23:03:33 [INFO] plotter: Gráfica guardada: plots/run_20260420_230315/2_rsa_vs_ecdsa_boxplot.html
+23:03:33 [INFO] plotter: Gráfica guardada: plots/run_20260420_230315/3_cert_size_vs_chain.html
+23:03:33 [INFO] plotter: Gráfica guardada: plots/run_20260420_230315/4_scalability_heatmap.html
+23:03:33 [INFO] plotter: Dashboard guardado: plots/run_20260420_230315/5_dashboard.html
+23:03:33 [INFO] plotter: 
+✅ 5 gráficas generadas en: plots/run_20260420_230315
+23:03:33 [INFO] __main__: 
+📊 Gráficas generadas:
+23:03:33 [INFO] __main__:    → plots/run_20260420_230315/1_latency_vs_chain.html
+23:03:33 [INFO] __main__:    → plots/run_20260420_230315/2_rsa_vs_ecdsa_boxplot.html
+23:03:33 [INFO] __main__:    → plots/run_20260420_230315/3_cert_size_vs_chain.html
+23:03:33 [INFO] __main__:    → plots/run_20260420_230315/4_scalability_heatmap.html
+23:03:33 [INFO] __main__:    → plots/run_20260420_230315/5_dashboard.html
+23:03:33 [INFO] __main__: 
+🎉 Pipeline finalizado — Run ID: 20260420_230315
+23:03:33 [INFO] __main__:    Datos   : results/run_20260420_230315/
+23:03:33 [INFO] __main__:    Gráficas: plots/run_20260420_230315/
+23:03:33 [INFO] __main__:    Logs    : logs/
+
