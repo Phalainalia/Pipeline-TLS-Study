@@ -11,14 +11,14 @@ Quick-start checklist:
 """
 
 # ── WiFi (written into firmware via PlatformIO build flags) ──────────
-WIFI_SSID     = "INFINITUM1C9E"          # ← your SSID
-WIFI_PASSWORD = "uumv3TPMs4"          # ← your password
+WIFI_SSID     = "WIFI_SSID"          # ← your SSID
+WIFI_PASSWORD = "PASSWORD"          # ← your password
 
 # ── TLS server ────────────────────────────────────────────────────────
 # SERVER_IP must be your PC's LAN IP address reachable from the ESP32.
 # Find it with:  ip addr (Linux/Mac)  |  ipconfig (Windows)
 # Do NOT use 127.0.0.1 – the ESP32 cannot reach localhost.
-SERVER_IP   = "192.168.1.129"           # ← your PC's LAN IP
+SERVER_IP   = "IP"           # ← your PC's LAN IP
 SERVER_PORT = 8443
 
 # ── Serial (USB cable between PC and ESP32) ───────────────────────────

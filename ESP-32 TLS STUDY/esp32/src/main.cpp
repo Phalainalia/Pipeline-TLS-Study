@@ -18,8 +18,8 @@
 #include "esp_sntp.h"
 
 #ifndef WIFI_SSID
-  #define WIFI_SSID     "INFINITUM1C9E"
-  #define WIFI_PASSWORD "uumv3TPMs4"
+  #define WIFI_SSID     "WIFI_SSID"
+  #define WIFI_PASSWORD "PASSWORD"
 #endif
 
 #if __has_include("root_ca_embed.h")
